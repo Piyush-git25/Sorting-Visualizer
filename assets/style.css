@@ -7,14 +7,22 @@ body {
   margin-top: 0.4em;
   background-color: #000;
 
-  font-family: "Catamaran", sans-serif;
+  /* font-family: "Catamaran", sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
+  /* font-family: fantasy; */
   color: #ccc;
-  height:100vh;
+  height: 100vh;
 }
- #info {
+#count {
+  font-weight: 800;
+  font-size: 1.2em;
+}
+#info {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 800;
+  font-size: 1.2em;
   /* position: fixed;
   top:3em;
   right:2em; */
@@ -25,21 +33,22 @@ body {
     top:4em;
 }
  */
- .stop{
-     display: none;
- }
-#header{
-    /* margin-left: 1em;    */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0.5em;
+.stop {
+  display: none;
 }
-#colorInfo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 1em;     */
+#header {
+  /* margin-left: 1em;    */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.8em;
+}
+#colorInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-weight:bolder; */
+  /* margin-top: 1em;     */
 }
 
 .display-none {
