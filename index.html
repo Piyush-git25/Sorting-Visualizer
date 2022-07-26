@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Sorting Algorithms Visualizer</h1>
+      <div id="header">
+        <p id="count"></p>
+        <div id="colorInfo">
+          <span
+            style="
+              background-color: deepskyblue;
+              padding: 0.4em 0.6em;
+              margin-right: 0.4em;
+              font-weight: 800;
+              border-radius: 1em;
+              color: rgb(29, 27, 2);
+            "
+            >UNSORTED</span
+          >
+          <span
+            style="
+              background-color: mediumspringgreen;
+              padding: 0.4em 0.6em;
+              margin-right: 0.4em;
+              font-weight: 800;
+              border-radius: 1em;
+              color: rgb(29, 27, 2);
+            "
+            >SORTED
+          </span>
+          <span
+            style="
+              background-color: crimson;
+              padding: 0.4em 0.6em;
+              margin-right: 0.4em;
+              font-weight: 800;
+              border-radius: 1em;
+              color: rgb(29, 27, 2);
+            "
+            >COMPARE</span
+          >
+          <span
+            style="
+              background-color: blueviolet;
+              padding: 0.4em 0.6em;
+              margin-right: 0.4em;
+              font-weight: 800;
+              border-radius: 1em;
+              color: rgb(29, 27, 2);
+            "
+            >SELECTED</span
+          >
+          <span
+            style="
+              background-color: gold;
+              padding: 0.4em 0.6em;
+              margin-right: 0.4em;
+              font-weight: 800;
+              border-radius: 1em;
+              color: rgb(29, 27, 2);
+            "
+            >LEFT</span
+          >
+          <span
+            style="
+              background-color: orangered;
+              padding: 0.4em 0.6em;
+              margin-right: 0.4em;
+              font-weight: 800;
+              border-radius: 1em;
+              color: rgb(29, 27, 2);
+            "
+            >RIGHT</span
+          >
+        </div>
+        <div id="info"></div>
+      </div>
+      <div id="array-container">
+        <div id="array"></div>
+        <h5 id="no-algo-warning" class="display-none">
+          No Algorithm Selected!
+        </h5>
+      </div>
+      <div id="change-container">
+        <button id="randomize">Randomize</button>
+        <div id="sliders">
+          <div class="slider-container">
+            <label>Array Size</label>
+            <input
+              type="range"
+              id="size-slider"
+              class="slider"
+              autocomplete="off"
+            />
+          </div>
+          <div class="slider-container">
+            <label>Speed</label>
+            <input
+              type="range"
+              id="speed-slider"
+              class="slider"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="algo-container">
+        <button class="algo-btn">Bubble Sort</button>
+        <button class="algo-btn">Selection Sort</button>
+        <button class="algo-btn">Insertion Sort</button>
+        <button class="algo-btn">Merge Sort</button>
+        <button class="algo-btn">Quicksort</button>
+        <button class="algo-btn">Heapsort</button>
+        <button id="sort">Start</button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/bubble-sort.js"></script>
+    <script src="assets/selection-sort.js"></script>
+    <script src="assets/insertion-sort.js"></script>
+    <script src="assets/merge-sort.js"></script>
+    <script src="assets/quicksort.js"></script>
+    <script src="assets/heapsort.js"></script>
+  </body>
+</html>
